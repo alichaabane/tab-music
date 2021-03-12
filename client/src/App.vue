@@ -1,23 +1,34 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
-  </div>
+  <v-app>
+    <v-main>
+          <page-header />
+
+      <v-container fluid>
+        <router-view />
+      </v-container>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
+import PageHeader from './components/Header'
+
 export default {
-  name: 'App'
+  components: {
+    PageHeader
+  },
+
+  data: () => ({
+    //
+  })
 }
 </script>
-
-<style>
+<style scoped>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
