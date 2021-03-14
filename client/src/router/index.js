@@ -4,8 +4,8 @@ import HelloWorld from '@/components/HelloWorld'
 import Register from '@/components/Register'
 import Login from '@/components/Login'
 import Songs from '@/components/Songs'
-import View from '@/components/View'
-
+import View from '@/components/ViewSong/View'
+import EditSong from '@/components/EditSong'
 import CreateSong from '@/components/CreateSong'
 import vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
@@ -35,7 +35,7 @@ export default new Router({
       component: Songs
     },
     {
-      path: '/songs:Songid',
+      path: '/songs/:songId',
       name: 'song',
       component: View
     },
@@ -43,6 +43,11 @@ export default new Router({
       path: '/songs/create',
       name: 'songs-create',
       component: CreateSong
+    },
+    {
+      path: '/songs/:songId/edit',
+      name: 'song-edit',
+      component: EditSong
     }
   ]
 })

@@ -11,18 +11,18 @@
           absolute
           right
           middle
-          fab>
-          <v-icon>add</v-icon>
+          fab>  <i class="fas fa-plus"></i> <!-- uses solid style -->
           </v-btn>
-      <div v-for="song in songs"
+      <div class="songs-custom" v-for="song in songs"
       :key="song.id">
+         <hr />
       <v-layout>
         <v-flex xs6>
           <div class="song-title">
-            {{song.title}}
+            {{song.title}} <i class="fas fa-music"  />
           </div>
           <div class="song-artist">
-            {{song.artist}}
+           <b> {{song.artist}} </b>
           </div>
           <div class="song-genre">
             {{song.genre}}
@@ -34,7 +34,7 @@
           </v-btn>
         </v-flex>
         <v-flex xs6>
-          <img id="album-image" :src="song.albumImage" />
+          <img id="album-image" :src="song.albumImage" /><br>
         </v-flex>
       </v-layout>
       </div>
@@ -68,10 +68,11 @@ export default {
 </script>
 
 <style scoped>
-#add-btn{
-  margin-right: 10px;
-    margin-top: -60px;
+
+.songs-custom{
+  margin: 5px;
 }
+
 .error{
   color:white;
 }
@@ -84,22 +85,62 @@ export default {
 .v-flex{
   margin-top: 25px;
 }
-#album-image{
-  width: 40%;
+
+@media (max-width:420px){
+  #add-btn{
+  margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    margin-top: -53px;
+}
+  #album-image{
+  width: 80%;
+  height: 100%;
   margin: 0 auto;
+  padding-top: 5px;
 }
-.song-title{
-  font-size: 30px
+
+  .song-title{
+    font-size: 14px
+  }
+  .song-genre{
+    font-size: 12px
+  }
+  .song-artist{
+    font-size: 16px;
+  }
+  .song{
+    padding: 20px;
+    height: 330px;
+    overflow: hidden;
+  }
 }
-.song-genre{
-  font-size: 18px
+
+@media (min-width:421px){
+  #add-btn{
+  margin-right: 10px;
+    margin-top: -60px;
 }
-.song-artist{
-  font-size: 24px;
+    #album-image{
+    width: 40%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 5px;
+  }
+  .song-title{
+    font-size: 25px
+  }
+  .song-genre{
+    font-size: 18px
+  }
+  .song-artist{
+    font-size: 24px;
+  }
+  .song{
+    padding: 20px;
+    height: 330px;
+    overflow: hidden;
+  }
 }
-.song{
-  padding: 20px;
-  height: 330px;
-  overflow: hidden;
-}
+
 </style>

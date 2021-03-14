@@ -10,7 +10,7 @@
         <p class="subheading font-weight-regular">
           For help and collaboration with other Vuetify developers,
           <br>please join our online
-          <a
+          <a rel="noreferrer"
             href="https://community.vuetifyjs.com"
             target="_blank"
           >Discord Community</a>
@@ -26,7 +26,7 @@
         </h2>
 
         <v-row justify="center">
-          <a
+          <a rel="noreferrer"
             v-for="(next, i) in whatsNext"
             :key="i"
             :href="next.href"
@@ -47,7 +47,7 @@
         </h2>
 
         <v-row justify="center">
-          <a
+          <a rel="noreferrer"
             v-for="(link, i) in importantLinks"
             :key="i"
             :href="link.href"
@@ -68,7 +68,7 @@
         </h2>
 
         <v-row justify="center">
-          <a
+          <a rel="noreferrer"
             v-for="(eco, i) in ecosystem"
             :key="i"
             :href="eco.href"
