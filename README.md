@@ -1,4 +1,4 @@
-# tab-music
+# Tab Music
 <b> *** Vue.js &amp; Express.js Web App for keeping track of songs</b>
 
 How to install :
