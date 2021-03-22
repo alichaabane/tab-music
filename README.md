@@ -17,6 +17,14 @@ ITerm2: https://www.iterm2.com/ (Mac Only)
 
 Git: https://git-scm.com/
 
+****************************************************************************
+### Run Client & Server side both with same command :
+
+1) npm i (in global app folder)
+2) npm run dev
+
+****************************************************************************
+### OR run each one of them a part : <br>
 ### Client - Terminal A
 ```
 cd client
