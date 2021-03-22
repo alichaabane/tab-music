@@ -1,10 +1,10 @@
 <template>
-<panel title="Search">
-  <v-text-field
-  label="Search by song title, artist, album, or genre"
-  v-model="search"
-  />
-</panel>
+  <panel title="Search">
+    <v-text-field
+      label="Search by song title, artist, album, or genre"
+      v-model="search"
+    ></v-text-field>
+  </panel>
 </template>
 
 <script>
@@ -17,7 +17,6 @@ export default {
     }
   },
   watch: {
-    // _debounce used for making a certain time of waiting until her finish wwriting the searched word
     search: _.debounce(async function (value) {
       const route = {
         name: 'songs'
@@ -39,5 +38,6 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
+
 </style>

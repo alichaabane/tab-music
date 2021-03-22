@@ -1,0 +1,28 @@
+{
+  "name": "tab-music",
+  "version": "1.0.0",
+  "description": "<b> *** Vue.js &amp; Express.js Web App for keeping track of songs</b>",
+  "main": "index.js",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "concurrently": "^6.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server-side": "cd server && npm run start",
+    "client-side": "cd client && npm run start",
+    "dev": "concurrently \"npm run server-side\" \"npm run client-side\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alichaabane/tab-music.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alichaabane/tab-music/issues"
+  },
+  "homepage": "https://github.com/alichaabane/tab-music#readme"
+}
