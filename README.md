@@ -19,9 +19,10 @@ Git: https://git-scm.com/
 
 ****************************************************************************
 ### Run Client & Server side both with same command :
-
-1) npm i (in global app folder)
-2) npm run dev
+```
+ npm install (in the global folder of app )
+ npm run dev
+```
 
 ****************************************************************************
 ### OR run each one of them a part : <br>
