@@ -10,7 +10,7 @@ app.use(morgan('combined'))
 app.use(bodyParser.json())
 app.use(cors())
 
-console.log("tab music app!!!!")
+console.log("tab music app!!!! works !")
 require('./routes')(app)
 
 // force : false (mean without drop all tables)
