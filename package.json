@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "<b> *** Vue.js &amp; Express.js Web App for keeping track of songs</b>",
   "main": "index.js",
+  "authors": "Ali Chaabane ",
   "dependencies": {
     "colors": "^1.4.0",
     "concurrently": "^6.0.0"
