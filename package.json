@@ -6,7 +6,7 @@
   "authors": "Ali Chaabane ",
   "dependencies": {
     "colors": "^1.4.0",
-    "concurrently": "^6.0.0"
+    "concurrently": "^6.2.2"
   },
   "devDependencies": {},
   "scripts": {
